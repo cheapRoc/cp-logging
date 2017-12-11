@@ -1,5 +1,8 @@
 {
   consul: "127.0.0.1:8500",
+  logging: {
+    level: '{{ .LOG_LEVEL | default "DEBUG" }}',
+  },
   jobs: [
     {
       name: "logging",
