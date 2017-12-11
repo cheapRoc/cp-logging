@@ -1,0 +1,12 @@
+#!/bin/bash
+
+_log() {
+    echo "    $(date -u '+%Y-%m-%d %H:%M:%S') cp-log: $@"
+}
+
+for output in $*; do
+    _log "-- Begin ${output}"
+    cat $output
+    echo ""
+    _log "-- End ${output}"
+done

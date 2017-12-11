@@ -1,0 +1,9 @@
+{
+  consul: "127.0.0.1:8500",
+  jobs: [
+    {
+      name: "logging",
+      exec: "/usr/bin/cp-log /tmp/outputs/*.log",
+    },
+  ],
+}
